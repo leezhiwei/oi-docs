@@ -363,6 +363,8 @@ index cffac27..448c171 100644
 
 The Sun Ray Software needs the Sun/Oracle JRE 1.7 which is shipped with the Sun Ray Software.
 
+You may encounter an issue with regards to the file `libCrun.so.1` present in `/usr/lib/libCrun.so.1` with installation of the JDK/JRE. Please take note that this file will be present after installing the `system/library/c++/sunpro` package.
+
 ## Config
 
 You can run `utconfig` and `utadm` the way described in the [Sun Ray Software](https://docs.oracle.com/cd/E35310_01/index.html) document.
