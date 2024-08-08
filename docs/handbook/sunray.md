@@ -420,6 +420,15 @@ gnome-settings-daemon@2.32.1
 gdm@2.30.7
 libgnomekbd@2.32.0
 ```
+Please take note, you may encounter the following error after doing a `pkg install` on the above packages.
+
+```
+pkg install: No matching version of library/gnome/libgnomekbd can be installed:
+ Reject: pkg://sunray/library/gnome/libgnomekbd@2.32.0-2018.0.0.2
+ Reason: This version is excluded by installed incorporation consolidation/userland/userland-incorportation@0.5.11-2024.0.0.256.14
+...
+```
+Refer to the Oracle article to relax version constraints <https://docs.oracle.com/cd/E26502_01/html/E28984/gmias.html>
 
 These are still in hipster repo, but are obsoleted empty metapackages.
 
