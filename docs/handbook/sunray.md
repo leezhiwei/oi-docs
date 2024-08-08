@@ -428,7 +428,12 @@ pkg install: No matching version of library/gnome/libgnomekbd can be installed:
  Reason: This version is excluded by installed incorporation consolidation/userland/userland-incorportation@0.5.11-2024.0.0.256.14
 ...
 ```
-Refer to the Oracle article to relax version constraints <https://docs.oracle.com/cd/E26502_01/html/E28984/gmias.html>
+
+Refer to the Oracle article to relax version constraints <https://docs.oracle.com/cd/E26502_01/html/E28984/gmias.html>.
+
+There is an issue with regards to `x11/library/libxxf86misc` as the main publisher from OpenIndiana has updated it from version `1.0.4-2020.0.1.0` to `1.0.4-2020.0.1.1`. 
+
+A temporary fix is to clone the repository using `pkgrepo` locally, and update the manifest to point to the new version.
 
 These are still in hipster repo, but are obsoleted empty metapackages.
 
